@@ -1,0 +1,21 @@
+graph G {
+"ozpp" -- "rom-an" [color="0.515 0.562 0.562"];
+"evgen22" -- "roz-a";
+"Mitrophan" -- "evgen22";
+"Mitrophan" -- "mih-mih";
+"Mitrophan" -- "ozpp";
+"ozpp" -- "perov";
+"Mitrophan" -- "rom-an";
+"mih-mih" -- "rom-an";
+"perov" -- "rom-an";
+"mih-mih" -- "perov";
+"Mitrophan" -- "roz-a";
+"evgen22" -- "perov";
+"evgen22" -- "mih-mih";
+"evgen22" -- "ozpp";
+"Mitrophan" -- "perov";
+"perov" -- "roz-a";
+"mih-mih" -- "ozpp";
+"ozpp" -- "roz-a";
+}
+

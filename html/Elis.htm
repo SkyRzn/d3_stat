@@ -1,0 +1,1011 @@
+<!-- //d3.dev/user/Mertas/posts/ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html data-lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>dirty.ru — Elis</title>
+	
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="fb:pages" content="639289549518940" />
+
+<link rel="icon" type="image/png" href="//dirty.ru/static/favicon_ru.png">
+<link rel="search" type="application/opensearchdescription+xml" title="dirty.ru" href="/static/opensearch.xml" />
+<link rel="apple-touch-icon" href="/static/i/iphone_icon.png" />
+
+
+<script type="application/javascript">
+    window.lang = 'ru';
+    window.localization_asset_url = '';
+</script>
+
+
+<script type="text/javascript">
+    globals = {};
+    globals.parent_site = '//dirty.ru';
+    globals.recaptcha_public_key = '6Ldtrg0TAAAAAO7JU8e4jgwk8PSjeLAisAn_iW6M';
+    globals.user = null;
+    globals.base_domain = null;
+    globals.is_base_domain = '';
+    globals.domain = {
+        host : 'dirty.ru',
+        url : '//dirty.ru',
+        id : 1,
+        attributes : {
+            comment_hint: ""
+        }
+    };
+    globals.feed = {
+        all_domains : false,
+        threshold : 'false'
+    };
+    globals.socketio_url = 'https://socketio.dirty.ru/';
+    globals.is_gold_enabled = true;
+    globals.is_ads_enabled = true;
+</script>
+
+
+	<link href="https://dirty.ru/static/cache/essential-style.css?44d077ce" rel="stylesheet" type="text/css">
+	<script src="https://dirty.ru/static/cache/essential-script.js?8ee82ade" type="text/javascript"></script>
+
+		<link href="https://dirty.ru/static/cache/all.css?dc53f84a" rel="stylesheet" type="text/css">
+		<script src="https://dirty.ru/static/cache/additional-script.js?5b16e100" type="text/javascript"></script>
+
+
+
+<script src="//dirty.ru/static/js/adfox.asyn.code.ver3.js" type="text/javascript"></script>
+
+</head>
+
+<body class="l-profile">
+<script type="text/javascript">
+    var adaptiveLayoutHandler = {
+        update: function() {
+            var elem = (document.compatMode === "CSS1Compat") ? document.documentElement : document.body;
+            var height = elem.clientHeight;
+            var width = elem.clientWidth;
+            var body = document.body;
+            var event;
+
+            var layouts = [1600, 1470, 1400, 1350, 1280, 1200, 1100, 1070, 1000, 900, 800, 700, 600, 500, 400, 350, 320];
+            var classes = [];
+
+            for (var i = 0; i <= layouts.length; i++) {
+                width <= layouts[i] && classes.push('l-' + layouts[i]);
+            }
+            
+            
+            // TODO: переделать touch_capable на touch_small
+            if ((('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)) {
+                classes.push('l-touch');
+            }
+            
+            // iphone 6+ width is 414px
+            if ((('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)) {
+                classes.push('l-touch_capable');
+            }
+            
+            if (true) {
+                classes.push('l-mouse_capable');
+            }
+
+            if (this.device()) {
+                this.device() == 'desktop' ? classes.push('l-desktop') : classes.push('l-touch_' + this.device());
+            }
+
+            if (window.swfobject) {
+                if (!window.swfobject.hasFlashPlayerVersion('1')) {
+                    classes.push('l-no_flash');
+                }
+            }
+
+            classes.push("l-base_domain l-anonymous".trim());
+
+            document.body.className = document.body.className.split(/\s+|^/).filter(function(item) {
+                return ! item.match(/^l-([0-9]+|no_flash|touch|touch_capable|mouse_capable|touch_tablet|touch_phone|desktop|custom_domain|base_domain|anonymous|custom_domain-[0-9]+)$/);
+            }).concat(classes).join(' ');
+            
+            if ('modalHandler' in window && modalHandler.form) {
+                modalHandler.adjust();
+            }
+
+            if (document.createEvent) {
+                event = document.createEvent('HTMLEvents');
+                event.initEvent('update_layout', true, true);
+            } else {
+                event = document.createEventObject();
+                event.eventType = 'update_layout';
+            }
+
+            event.eventName = 'update_layout';
+            event.memo = { };
+
+            if (document.createEvent) {
+                document.dispatchEvent(event);
+            } else {
+                document.fireEvent('on' + event.eventType, event);
+            }
+        },
+        device: function() {
+            var devices = {},
+                userAgent = window.navigator.userAgent.toLowerCase(),
+                device;
+
+            devices.iphone = function () {
+              return !devices.windows() && find('iphone');
+            };
+
+            devices.ipod = function () {
+              return find('ipod');
+            };
+
+            devices.ipad = function () {
+              return find('ipad');
+            };
+
+            devices.android = function () {
+              return !devices.windows() && find('android');
+            };
+
+            devices.androidPhone = function () {
+              return devices.android() && find('mobile');
+            };
+
+            devices.androidTablet = function () {
+              return devices.android() && !find('mobile');
+            };
+
+            devices.blackberry = function () {
+              return find('blackberry') || find('bb10') || find('rim');
+            };
+
+            devices.blackberryPhone = function () {
+              return devices.blackberry() && !find('tablet');
+            };
+
+            devices.blackberryTablet = function () {
+              return devices.blackberry() && find('tablet');
+            };
+
+            devices.windows = function () {
+              return find('windows');
+            };
+
+            devices.windowsPhone = function () {
+              return devices.windows() && find('phone');
+            };
+
+            devices.windowsTablet = function () {
+              return devices.windows() && (find('touch') && !devices.windowsPhone());
+            };
+
+            devices.fxos = function () {
+              return (find('(mobile;') || find('(tablet;')) && find('; rv:');
+            };
+
+            devices.fxosPhone = function () {
+              return devices.fxos() && find('mobile');
+            };
+
+            devices.fxosTablet = function () {
+              return devices.fxos() && find('tablet');
+            };
+
+            devices.meego = function () {
+              return find('meego');
+            };
+
+            function find(needle) {
+              return userAgent.indexOf(needle) !== -1;
+            }
+
+            if (devices.androidPhone() || devices.iphone() || devices.ipod() || devices.windowsPhone() || devices.blackberryPhone() || devices.fxosPhone() || devices.meego()) {
+                return device = 'phone';
+            }
+            else if (devices.ipad() || devices.androidTablet() || devices.blackberryTablet() || devices.windowsTablet() || devices.fxosTablet()) {
+                return device = 'tablet';
+            }
+            else {
+                return device = 'desktop';
+            }
+        }
+    };
+
+    adaptiveLayoutHandler.update();
+</script>
+
+
+<div class="l-wrapper" id="js-nonfooter">
+	
+
+
+
+	<div class="l-i-wrapper">
+		
+
+
+<div class="l-header-base "  itemscope="" itemtype="http://schema.org/WPHeader">
+
+
+    <div class="l-header  ">
+        <div class="l-i-header">
+                <a href="//dirty.ru" class="b-header_home" title="Вернуться на главную">
+                    <span class="b-svg-icon" data-name="home"></span>
+                    <span class="b-header_home_caption">dirty</span>
+                </a>
+            <a href="/" style="background-image:url(/static/i/logo_main_retina.png)" class="b-logo b-logo-shift" id="js-logo">
+                <img src="/static/i/logo_main_retina.png" alt="dirty.ru">
+            </a>
+                    <style>
+                        .l-header_nav {
+                            text-align:left;
+                            padding-top: 17px;
+                            padding-left: 0;
+                            float:left;
+                        }
+                        .b-logo-shift ~ .l-header_nav {
+                            padding-left: 40px;
+                        }
+                        .l-header_big_login_controls {
+                            font-size:15px;
+                        }
+                        .l-500 .l-header_big_login_controls {
+                            font-size:13px;
+                        }
+                        .l-700 .l-header_nav {
+                            padding-top: 10px;
+                            padding-left: 75px;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .l-500 .l-header_nav {
+                            padding-top: 10px;
+                        }
+                        .l-350 .l-header_nav {
+                            padding-left: 75px;
+                        }
+                        .l-700 .b-logo-shift ~ .l-header_nav {
+                            padding-left: 100px;
+                        }
+                        .l-350 .b-logo-shift ~ .l-header_nav {
+                            font-size: 11px;
+                        }
+                        .l-header_big_login_link {
+                            bottom: auto;
+                            right: 380px;
+                            top: 18px;
+                        }
+                        .l-1000 .l-header_big_login_link {
+                            right: 30px;
+                        }
+                        .l-700 .l-header_big_login_link {
+                            top: 10px;
+                        }
+                        .l-600 .l-header_big_login_link {
+                            display: none;
+                        }
+                        .l-header_big_login_link a {
+                            font-size:13px;
+                            color: #464646;
+                        }
+                        .l-header_big_login_link a:hover {
+                            font-size:13px;
+                            color: #556e8c;
+                        }
+                        .l-header_big_login_link a:after {
+                            font-size: 24px;
+                            top: 1px;
+                        }
+                    </style>
+                    <div  class="l-header_nav">
+                        <div class="l-header_big_login_controls">
+                            <a class="dotted" href="//dirty.ru/register" onclick="return registerHandler.init() && modalHandler.select('.b-form-register', '.b-form');">Зарегистрируйтесь</a> или <a class="dotted" href="//dirty.ru/login" onclick="return loginHandler.init() && modalHandler.select('.b-form-login', '.b-form');">войдите</a>
+                        </div>
+                        <div class="l-header_big_login_link">
+                            <a href="//dirty.ru/about">узнайте больше о dirty</a>
+                        </div>
+                    </div>
+
+                
+
+            <div class="b-header_blogs">
+                <a href="//dirty.ru/communities/top" label="Сообщества"></a>
+                    <a href="//dirty.ru/randomsite" label="Случайное">
+                        <i class="b-svg-icon" data-name="random_subsite"></i>
+                    </a>
+            </div>
+
+            <div class="b-header_search b-header_search_input_shrinked">
+                <form id="js-header_search_form" onsubmit="return !! this.query.get('value');" action="//dirty.ru/search/">
+                    <span class="b-header_search_input_holder">
+                        <input onblur="setTimeout(function() {this.getParent('.b-header_search').addClass('b-header_search_input_shrinked')}.bind(this), 500);" type="text" placeholder="Поиск по сайту" id="js-header_search_input" value="" name="query" class="i-form_text_input_white i-form_text_input__medium">
+                    </span>
+                    <input type="submit" class="pos_hidden">
+                    <a href="//dirty.ru/search" title="поиск" class="b-button b-button__search" onclick="if ( ! document.body.hasClass('l-touch_phone') ) { var holder = this.getParent('.b-header_search'); holder.hasClass('b-header_search_input_shrinked') ? holder.removeClass('b-header_search_input_shrinked').field('query').focus() : this.getParent('form').query.get('value') ? this.getParent('form').submit() : location.href = this.get('href'); } else { location.href = this.get('href') } return false;">
+                        <span class="b-button_icon">
+                            <span class="b-svg-icon b-svg-icon__find" data-name="find"></span>
+                        </span>
+                    </a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	iconsHandler.update();
+</script>
+
+		<div class="l-content">
+		<div class="b-user_cover-wrap b-user_cover-wrap_plain ">
+			<div class="b-user_cover" data-id="" data-src="" data-offset="" data-video="">
+					<img src="" class="b-user_cover-photo" alt="" />
+				<div class="b-user_cover-bg"></div>
+			</div>
+		</div>
+		<div class="b-user_data_wrapper  ">
+			<div class="l-center_container">
+				<div class="b-user_photo" >
+				</div>
+				<div class="b-user_votes_wrapper">
+					<div class="b-user_votes_container">
+						
+						<div class="b-user_karma js-karma   b-voted_n" >
+							
+							<div class="b-karma_controls b-karma_controls__left">
+								<div class="b-karma_controls-container js-karma_controls b-voted_0 left" data-value="0" data-user_id="87927">
+									<div class="b-karma_controls-corner"></div>
+									<div class="b-karma_controls-bg">
+										<div class="b-karma_controls-shadow">
+											<i class="b-karma_button b-karma_button__left_minus">&minus;</i>
+											<i class="b-karma_button b-karma_button__right_minus">&minus;</i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-karma_value" onclick="voteResultsHandler.showVoteResult('87927', 'karma'); return false;">0</div>
+							
+							<div class="b-karma_controls b-karma_controls__right">
+								<div class="b-karma_controls-container js-karma_controls b-voted_0 right" data-value="0" data-user_id="87927">
+									<div class="b-karma_controls-corner"></div>
+									<div class="b-karma_controls-bg">
+										<div class="b-karma_controls-shadow">
+											<i class="b-karma_button b-karma_button__left_plus">+</i>
+											<i class="b-karma_button b-karma_button__right_plus">+</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						new KarmaHandler(voteResultsHandler);
+					</script>
+				</div>
+				<div class="b-user_data">
+					<div class="b-user_name">
+						<div class="b-user_name_inner">
+							<table class="b-user_name-table">
+								<tr>
+									<td class="b-table-cell">
+										<h2><a href="/user/Elis" class="b-user_name-link">Elis</a></h2>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			futuParallax.init('.b-user_cover', '.b-user_cover-photo');
+		</script>
+		<div class="l-center_container">
+			<div class="b-profile_content b-profile_content_image">
+				<div class="l-content_wrapper">
+					<div class="b-info_column b-info_column__plain">
+						<div class="b-info_block">
+							<div class="b-info_block-content">
+								<h3 class="b-user_full_name"> </h3>
+								<div class="b-user_residence">
+								</div>
+
+								
+								<div class="js-subscribe_controls js-shrinking_controls b-user_subscription " id="js-user_subscription">
+									<a href="javascript:;" class="b-fui_icon_button b-fui_icon_button_subscribe" onclick="feedSettingsHandler.subscribe(this, 'users', '87927', 'js-user_subscription', event); return false;"><span></span><i>подписаться</i><em></em></a>
+									<a href="javascript:;" class="b-fui_icon_button b-fui_icon_button_unsubscribe" onclick="feedSettingsHandler.unsubscribe(this, 'users', '87927', 'js-user_subscription', event); return false;"><span></span><i class="js-subscribed_text">подписан</i><i class="js-unsubscribe_text">отписаться</i><em></em></a>
+									<span class="b-user_subscription_text">
+    									    <span class="b-subscribers_count">0</span>
+    									    <span class="b-subscribers_description">подписчиков</span>
+									</span>
+								</div>
+							</div>
+							<div class="b-info_block-content">
+								<div class="b-profile_stat">
+									<div class="b-user_stats">
+										<span class="b-user_single_stat">
+											<i class="b-svg-icon b-svg-icon__sum" data-name="sum" title="общий рейтинг за все публикации из всех сообществ / средний рейтинг за день"></i>
+												0 / <strong>
+												<script type="text/javascript">
+													var days_since_registration = Math.ceil(((new Date()).getTime()/1000 - 1392946208)/60/60/24);
+													var average_daily_rating = Math.floor(0/days_since_registration*10)/10;
+													document.write(average_daily_rating);
+												</script>
+											</strong>
+										</span>
+									</div>
+
+
+								</div>
+								<div class="b-info_block-item">
+								</div>
+
+							</div>
+
+						</div>
+
+						<script type="text/javascript">
+							profilePicHandler.init();
+							profileAvatarHandler.init();
+							voteWeightsHandler.init();
+						</script>
+					</div>
+
+					<div class="l-content_column">
+						
+	<div class="b-menu b-menu__profile">
+		<ul>
+		</ul>
+	</div>
+
+
+						<!-- profile search -->
+
+						<script type="text/javascript">
+							
+							searchHandler = {
+								lastQueryData:  undefined,
+								container:      undefined,
+
+								init: function (cfg) {
+									$extend (this, cfg) // supplying { author, type }
+									this.container = $('js-profile_search')
+									this.initInput ()
+									this.initDomains ()
+								},
+
+								initInput: function () {
+									var submitDebounced = this.submit.bind(this).debounced(200);
+
+									$('js-profile_search_input').addEvents ({
+										keyup:  submitDebounced,
+										input:  submitDebounced,
+										change: submitDebounced,
+										focus: function(){
+											$('js-profile_search_controls').addClass('open');
+										}
+									})
+
+									this.container.getElement ('form').addEvents ({
+										submit: function (e) {
+											submitDebounced.callImmediately ()
+											e.preventDefault (); return false
+										}
+									})
+								},
+
+								initDomains: function () {
+									this.toggleButtons =
+										$('js-profile_search_controls').getElements ('a').addEvent ('click', (function (event) {
+											this.toggleButtons.removeClass ('active')
+											event.target.addClass ('active')
+											this.submit (0)
+										}).bind (this))
+
+									$('js-search_settings_domains').getElement('input[type=search]').addEvents ({
+										keydown: function(event) {
+											domainsSelector.onQueryInputKeyPress(event.event, '1', '', '')
+										},
+										blur: function() {
+											domainsSelector.onQueryInputBlur ()
+										},
+										focus: function() {
+											domainsSelector.onQueryInputFocus ()
+										}
+									})
+								},
+								getDomains: function () {
+									return {
+										domains: this.container.field ('domain_ids').value || undefined
+									}
+								},
+								addDomain: function(domain) {
+									var holder = this.container.getElement('.b-domains_select ul');
+
+									holder.getElement('[data-id=' + domain.id + ']') || holder
+										.appendHTML('<li data-id="{id}" data-prefix="{prefix}"><a href="//{url}" target="_blank">{prefix}</a><s>&times;</s></li>'.substitute({
+											id:         domain.id,
+											url:        domain.url,
+											prefix:     domain.url.split('.')[0]
+										}))
+										.getElements('s').pop().addEvent('click', function() {
+											searchHandler.removeDomain(this.getParent().get('data-id'));
+										});
+
+									this.container.getElement('.b-domains_select input').set('value', '');
+
+									this.container.field('domain_ids').set('value', holder.getElements('[data-id]').map(function(item) {
+										return item.get('data-prefix');
+									}).join(','));
+
+									this.submit (0)
+								},
+								removeDomain: function(id) {
+									var holder = this.container.getElement('.b-domains_select ul'), item = holder.getElement('[data-id=' + id +']');
+
+									item && item.dispose();
+
+									this.container.field('domain_ids').set('value', holder.getElements('[data-id]').map(function(item) {
+										return item.get('data-prefix');
+									}).join(','));
+
+									this.submit (0)
+								},
+
+								submit: function (offset) {
+									var queryValue  = $('js-profile_search_input').value
+									var hasValue    = queryValue.length > 1
+									var queryData   = Object.toQueryString (Object.append ({ q: queryValue }, this.getDomains ()))
+
+									$('js-profile_search_controls').toggleClass ('open', hasValue)
+
+									if (this.lastQueryData != queryData) {
+										if (hasValue) {
+											URIHandler.navigateToPage((new Element('a', { 
+												href : $$('.b-menu__profile .b-menu_item_active .b-menu_link')[0].getAttribute('href') + 'search/?' + queryData
+											})));
+										} else if (this.lastQueryData != undefined) {
+											URIHandler.navigateToPage($$('.b-menu__profile .b-menu_item_active .b-menu_link')[0]);
+										}
+										this.lastQueryData = queryData
+									}
+								}
+							}
+						</script>
+
+						<div id="js-profile_search" class="b-profile_search">
+							<form> <!-- domains_selector.js requires input[name=domain_ids] to be wrapped into form -->
+								<span class="b-button_icon b-profile_search_icon">
+									<span class="b-svg-icon b-svg-icon__find" data-name="find"></span>
+								</span>
+								<input type="search" id="js-profile_search_input" class="i-form_text_input i-form_text_input_white i-form_text_input_profile_search" placeholder="Поиск" autocomplete="off">
+								<div id="js-profile_search_controls" class="b-profile_search_controls">
+									<span class="b-profile_search_controls_caption">в сообществах:</span>
+									<span class="b-domains_select" id="js-search_settings_domains">
+										<input type="search" class="i-form_text_input i-form_text_input_white i-form_text_input_profile_search_domains" />
+										<ul></ul>
+									</span>
+									<ul id="js-new_post_domain_found_domains" class="b-new_post_domain_found_domains hidden"></ul>
+								</div>
+								<input type="hidden" name="domain_ids" value="" />
+								<span style="display:none;"><button id="js-profile_search_submit" class="b-button__gradient" type="submit" alt="YARRR!"></button></span>
+							</form>
+						</div>
+						<script type="text/javascript">searchHandler.init ()</script>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_posts">
+							Посты
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_posts_search">
+							Поиск по постам
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_comments">
+							Комментарии
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_comments_search">
+							Поиск по комментариям
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_favourites">
+							Избранные посты
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_favourites_comments">
+							Избранные комменты
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_votes">
+							Голоса
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_domains">
+							Домены
+						</div>
+
+						<div class="b-text_container hidden" data-navigation_id="user_elis_bans">
+							Баны
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				futuShare.greeting = '';
+				if ($('js-comments_holder')) {
+					$('js-comments_holder').getElements('.c_body').each(function(element) {
+						postsCutHandler.resizeImages(element);
+					});
+				}
+				popupHandler.update($$('.b-info_column')[0]);
+				globals.first_load = true;
+				if (window.addEventListener) {
+					window.addEventListener('load', function() {
+						setTimeout(function() {
+							window.addEventListener('popstate', function(event) {
+								globals.first_load = true;
+								URIHandler.navigateToPage();
+							});
+							globals.first_load = true;
+						}, 0);
+					});
+				};
+				URIHandler.navigateToPage();
+			</script>
+
+			
+
+
+
+
+		</div>
+	</div>
+
+</div>
+	<!-- Google Analytics counter -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-86739-10', 'dirty.ru');
+	  ga('set', 'dimension1', 'user_not_authenticated');
+	  ga('set', 'dimension2', 'user_is_not_on_subdomain');
+	  ga('require', 'displayfeatures');
+	  ga('send', 'pageview');
+	</script>
+	<!-- Google Analytics counter -->
+
+
+<div class="l-footer " id="js-footer"   itemscope="" itemtype="http://schema.org/WPFooter">
+	<div class="b-footer_wrapper">
+		<div class="b-footer_links">
+            
+<a href="http://telegram.me/dirtyrubot
+" target="_blank" class="b-sidebar_footer_icon_link b-sidebar_footer_icon_link_telegram"><i class="b-svg-icon" data-name="telegram"></i></a>
+<a href="https://twitter.com/d3ru" target="_blank" class="b-sidebar_footer_icon_link"><i class="b-svg-icon" data-name="social_twitter"></i></a>
+<a href="https://www.facebook.com/superd3ru" target="_blank" class="b-sidebar_footer_icon_link"><i class="b-svg-icon" data-name="social_facebook"></i></a>
+<a href="https://vk.com/superd3ru" target="_blank" class="b-sidebar_footer_icon_link"><i class="b-svg-icon" data-name="social_vkontakte"></i></a>
+<a href="https://instagram.com/dirty_ru/" target="_blank" class="b-sidebar_footer_icon_link"><i class="b-svg-icon" data-name="social_instagram"></i></a>
+<a href="http://ok.ru/dirtyru" target="_blank" class="b-sidebar_footer_icon_link"><i class="b-svg-icon" data-name="social_ok"></i></a>
+
+		</div>
+		<div class="b-footer_left" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+			<ul class="b-footer_block">
+				<li class="b-footer_block_caption"><a href="//dirty.ru">dirty.ru</a></li>
+				<li><a href="//dirty.ru/about/">О сайте</a></li>
+				<li><a href="//dirty.ru/rules/">Правила</a></li>
+					<li><a href="//dirty.ru/wiki/">Энциклопедия</a></li>
+					<li><i class="b-svg-icon" data-name="chick"></i><a href="//dirty.ru/gold/">Золотой аккаунт</a></li>
+			</ul>
+			<ul class="b-footer_block">
+				<li class="b-footer_block_caption">Помощь</li>
+					<li>Общие вопросы: <a href="mailto:mailbox@dirty.us">mailbox@dirty.us</a></li>
+	<li>Что-то сломалось? <a href="mailto:wtf@dirty.us">wtf@dirty.us</a></li>
+
+			</ul>
+				<ul class="b-footer_block">
+					<li class="b-footer_block_caption">Реклама</li>
+					<li><a href="//dirty.ru/adv/">Размещение рекламы</a></li>
+					<li><a href="//dirty.ru/selfserve/">Частные объявления</a></li>
+				</ul>
+		</div>
+		<div class="b-footer_right">
+			<div class="b-footer_copyright">
+				<a href="//dirty.ru"><i class="b-svg-icon" data-name="oldchick"></i></a>
+				<span>©</span>
+				2016
+			</div>
+				<div class="b-footer_18plus">
+					<span>18+</span>
+				</div>
+			<ul class="b-footer_block">
+				<li><a href="//dirty.ru/license/">Пользовательское соглашение</a></li>
+			</ul>
+		</div>
+		<a class="b-footer_top" onclick="window.scrollTo(0, 0)">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path fill="#C6CBCE" d="M69.86,48.563L50.084,27.998L30.141,48.562c-0.191,0.198-0.187,0.515,0.012,0.707c0.198,0.193,0.514,0.188,0.707-0.011l18.72-19.304v41.548c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V29.957l18.561,19.3c0.098,0.102,0.229,0.153,0.36,0.153c0.125,0,0.25-0.046,0.347-0.14C70.046,49.079,70.052,48.763,69.86,48.563z"/></svg>
+		</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+(new Image()).src = '//www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g,'%2a') + '*druzhbamedia_ru/ru/UTF-8/tmsec=druzhbamedia_ohvat-lifestyle-science/' + Math.round(Math.random()*1E9);
+</script>
+<noscript>
+    <img src="http://www.tns-counter.ru/V13a****druzhbamedia_ru/ru/UTF-8/tmsec=druzhbamedia_ohvat-lifestyle-science-travel/" width="1" height="1" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+
+<!--[if IE 8]>
+<link href="/static/css/ie8.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+	
+
+<div id="js-modal" class="l-modal hidden">
+	<div class="b-form-wrapper">
+		<a class="b-form_close" onclick="return modalHandler.hide(registerHandler.onCloseForm());"></a>
+		<div class="b-form_field js-input_container" id="js-recaptcha_block">
+			<div class="g-recaptcha" id="js-recaptcha_widget" data-sitekey="6Ldtrg0TAAAAAO7JU8e4jgwk8PSjeLAisAn_iW6M"></div>
+		</div>
+		<div class="b-form b-form-register">
+			<div class="b-form_header">
+				<span>Станьте же скорее одним из нас!</span>
+			</div>
+			<form autocomplete="off" method="POST">
+				<div class="js-form_piece-step1">
+					<div class="b-form_field">
+						<input class="i-form_text_input_white" type="text" placeholder="Логин" name="emanresu" data-required />
+						<div class="b-form_field_status" data-name="registration_login">
+							<i class="b-svg-icon" data-name="error"></i>
+							<i class="b-svg-icon" data-name="right"></i>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="b-form_register_through_email" data-before_caption="Пройти регистрацию через:" data-after_caption="или социальные сети:">
+					<div class="b-i-form_register_through_email">
+						<a href="javascript:;" class="b-button b-button__gray" tabindex="-1">
+							<span class="b-button_caption">Почту</span>
+						</a>
+					</div>
+				</div>
+				
+
+<div data-after_caption="или" data-before_caption="Войти через социальную сеть:" class="b-social_network_icons  b-horizontal ">
+        <a class="b-social_network_icon-facebook " data-network="facebook" href="https://www.facebook.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_facebook"></i>
+        </a>
+            <a class="b-social_network_icon-vkontakte " data-network="vkontakte" href="https://vk.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_vkontakte"></i>
+        </a>
+        <a class="b-social_network_icon-twitter " data-network="twitter" href="https://twitter.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_twitter"></i>
+        </a>
+        <a class="b-social_network_icon-google " data-network="google" href="https://plus.google.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_google"></i>
+        </a>
+</div>
+
+				<div class="js-form_piece-step2">
+					<div class="b-form_field">
+						<input class="i-form_text_input_white" type="password" placeholder="Пароль" name="drowssap" data-required />
+						<input name="fake_password" class="hidden" type="password" value="" autocomplete="off" />
+						<div class="b-form_field_status" data-name="registration_password">
+							<i class="b-svg-icon" data-name="error"></i>
+							<i class="b-svg-icon" data-name="right"></i>
+							<span></span>
+						</div>
+					</div>
+					<div class="b-form_field">
+						<input class="i-form_text_input_white" type="text" placeholder="E-mail" name="liame" data-required />
+						<div class="b-form_field_status" data-name="registration_email">
+							<i class="b-svg-icon" data-name="error"></i>
+							<i class="b-svg-icon" data-name="right"></i>
+							<span></span>
+						</div>
+					</div>
+					<div class="b-form_field b-form_field-left">
+						<label>
+							<input type="radio" name="gender" value="male" />
+							<span>Я — мужчина</span>
+						</label>
+						<label>
+							<input type="radio" name="gender" value="female" />
+							<span>Я — женщина</span>
+						</label>
+						<div class="b-form_field_status" data-name="registration_gender">
+							<i class="b-svg-icon" data-name="error"></i>
+							<i class="b-svg-icon" data-name="right"></i>
+							<span></span>
+						</div>
+					</div>
+					<div class="b-form_field b-form_field-left">
+						<label>
+							<input type="checkbox" name="agreement" value="" />
+							<span>Я согласен с <a href="/rules" target="_blank">правилами</a></span>
+						</label>
+						<div class="b-form_field_status" data-name="registration_agreement">
+							<i class="b-svg-icon" data-name="error"></i>
+							<i class="b-svg-icon" data-name="right"></i>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="js-form_piece-step3">
+					<div class="b-form_field b-form_field-yarr">
+						<button class="b-button__gradient" alt="YARRR!"></button>
+					</div>
+				</div>
+			</form>
+			<div class="b-form_bottom">
+				Уже зарегистрированы?
+				<a href="/login" onclick="return loginHandler.init() && modalHandler.select('.b-form-login', '.b-form');">Войти</a>
+			</div>
+		</div>
+		<div class="b-form b-form-login">
+			<div class="b-form_header">
+				<span></span>
+				<b></b>
+				<b></b>
+			</div>
+			
+
+<div data-after_caption="или" data-before_caption="Войти через социальную сеть:" class="b-social_network_icons  b-horizontal ">
+        <a class="b-social_network_icon-facebook " data-network="facebook" href="https://www.facebook.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_facebook"></i>
+        </a>
+            <a class="b-social_network_icon-vkontakte " data-network="vkontakte" href="https://vk.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_vkontakte"></i>
+        </a>
+        <a class="b-social_network_icon-twitter " data-network="twitter" href="https://twitter.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_twitter"></i>
+        </a>
+        <a class="b-social_network_icon-google " data-network="google" href="https://plus.google.com/" target="_blank" title="" onclick=" " tabindex="-1">
+            <i class="b-svg-icon" data-name="social_google"></i>
+        </a>
+</div>
+
+			<form method="POST">
+				<div class="b-form_field">
+					<input class="i-form_text_input_white" type="text" placeholder="Логин" name="username" data-required />
+				</div>
+				<div class="b-form_field">
+					<input class="i-form_text_input_white" type="password" placeholder="Пароль" name="password" data-required />
+				</div>
+				<div class="b-form_field b-form_field-right">
+					<label>
+						<input name="forever" type="checkbox" checked="checked" />
+						<span>Запомнить меня</span>
+					</label>
+					<a href="/amnesia" onclick="return modalHandler.select('.b-form-amnesia', '.b-form');">Забыли?</a>
+				</div>
+				<div class="b-form_field b-form_field-left">
+				</div>
+				<div class="b-form_field b-form_field-yarr">
+					<button class="b-button__gradient" alt="YARRR!"></button>
+				</div>
+			</form>
+			<div class="b-form_bottom">
+				<a href="/register" onclick="return registerHandler.init() && modalHandler.select('.b-form-register', '.b-form');">Регистрация</a>
+			</div>
+		</div>
+		<div class="b-form b-form-amnesia">
+			<div class="b-form_header">
+				<span>Амнезия</span>
+				<small>Восстановление доступа</small>
+				<b></b>
+				<b></b>
+			</div>
+			<div class="b-form_hint">
+				<p>Это волшебная страница, на которой вы сможете восстановить забытый пароль. Вам нужно всего лишь вписать имя пользователя в верхнюю форму или адрес почты в нижнюю форму, и вам будет выслано письмо с инструкциями.</p>
+			</div>
+			<form method="POST">
+				<div class="js-form_content">
+					<div class="js-form_piece">
+						<div class="b-form_field">
+							<input class="i-form_text_input_white" type="text" placeholder="Логин" name="login" />
+						</div>
+						<div class="b-form_field">
+							<input class="i-form_text_input_white" type="text" placeholder="E-mail" name="email" />
+						</div>
+						<div class="b-form_field b-form_field-yarr">
+							<button class="b-button__gradient" alt="YARRR!"></button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="b-form_bottom">
+				<a href="/login" onclick="return loginHandler.init() && modalHandler.select('.b-form-login', '.b-form');">Я всё вспомнил!</a>
+				<p>Если что-то все равно не получается — <a href="mailto:wtf@d3.ru">пишите</a>.</p>
+			</div>
+		</div>
+		<div class="b-form b-form-subscribe">
+			<div class="b-form_header">
+				<span class="js-popular_message">Подпишитесь на популярные подсайты, которые могут быть вам интересны, например:</span>
+			</div>
+			<div class="b-form_hint">
+				<div class="b-search_form b-subscriptions_search_form">
+					<form action="/communities/search/" onsubmit="$$('.b-form-subscribe')[0].fireEvent('load', this.query.value); return false;" method="POST">
+						<input type="text" name="query" id="js-domains_search_input" class="i-form_text_input_white" placeholder="Поиск по темам, названиям, заголовкам">
+						<a href="javascript:;" onclick="$$('.b-form-subscribe')[0].fireEvent('load', this.getParent('form').query.value); return false;"  class="b-fui_icon_button b-fui_icon_button_search"><i class="b-svg-icon b-svg-icon__find" data-name="find"></i><em></em></a>
+					</form>
+				</div>
+			</div>
+			<div class="l-subscription_list">
+				<div class="b-list b-blogs_list b-blogs_list-compact"></div>
+				<a class="b-load_more_posts_button b-load_more_domains_button">Загрузить ещё</a>
+			</div>
+			<div class="b-form_bottom">
+				<a href="/" onclick="return registerHandler.allowToFinishSubscription();">Спасибо, достаточно</a>
+			</div>
+		</div>
+	</div>
+	<div id="js-flock" class="b-flock hidden"></div>
+</div>
+
+<div class="b-header_tagline b-login_signup_container invisible pos_hidden" id="js-content_login">
+	<div class="b-i-header_tagline">
+		<div class="header_login_invitation">
+			<div class="b-header_tagline_body">
+				Привет! &lt;a href=&#34;//dirty.ru/login&#34; onclick=&#34;return loginHandler.init() &amp;&amp; modalHandler.select(&#39;.b-form-login&#39;, &#39;.b-form&#39;);&#34; class=&#34;b-header_login_link&#34;&gt;Представьтесь&lt;/a&gt; или &lt;a href=&#34;//dirty.ru/register&#34; onclick=&#34;return registerHandler.init() &amp;&amp; modalHandler.select(&#39;.b-form-register&#39;, &#39;.b-form&#39;);&#34; class=&#34;b-header_login_link&#34;&gt;зарегистрируйтесь&lt;/a&gt;.
+			</div>
+		</div>
+		<div class="b-header_login_form hidden"></div>
+		<div class="b-header_tagline_arrow"></div>
+		<div class="b-header_tagline_inner_arrow"><div class="b-i-header_tagline_arrow"></div></div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	iconsHandler.update();
+</script>
+
+
+<script type="text/javascript">
+	if (typeof adaptiveLayoutHandler !== 'undefined') {
+		window.onresize = window.onorientationchange = function () {
+			window.clearTimeout(adaptiveLayoutHandler.update_timer);
+			adaptiveLayoutHandler.update_timer = null;
+			adaptiveLayoutHandler.update_timer = window.setTimeout(function () {
+				adaptiveLayoutHandler.update()
+			}, 100);
+		}
+	}
+	$$('#js-modal').inject(document.body, 'top'); // TEMP
+</script>
+
+
+
+
+	<div class="b-posts_banner_mobile">
+		<!-- MOBILE FULLSCREEN -->
+		<!--  AdRiver code START. Type:AjaxJS Site: dirty.ru PZ: 0 BN: 3 -->
+		<div id="adriver_banner_287288061"></div>
+
+		<script type="text/javascript">
+		new adriver("adriver_banner_287288061", {sid:142287, bt:52, bn:3});
+		</script>
+
+		<!--  AdRiver code END  -->
+	</div>
+
+
+
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=LpFW693lYU4xXADPwrAZv2BtOL/iE3gBuz*oM6OeMzO30AKDU2yvRbeVZHXGOK5EiJu9co08wNKC5vY3pNXQuK7JcWXmHk1ubnD97nI9K*iDrLqwK4j3BQoq*T2mM01n*wXeLsITuo0yC2vbx8YH//4Y0RTYDF4LxLvAaJ4P/wA-';</script>
+
+</body>
+</html>
